@@ -1,0 +1,25 @@
+- name: Install g++ and Ccache
+  apt: pkg={{ item }}
+  with_items: 
+    - g++
+    - ccache
+
+- name: Set Group for
+  ansible.builtin.group:
+   name: dev
+   state: present
+
+- name: Dir for ccache
+  ansible.builtin.file:
+    path: /home/dev_cache
+    owner: root
+    group: dev
+    state: directory
+    mode: '0775'
+
+- name: Config for ccache
+  ansible.builtin.copy:
+    src: ccache.conf
+    dest: /etc/ccache.conf
+    follow: yes
+    force: yes

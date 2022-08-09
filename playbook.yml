@@ -1,0 +1,7 @@
+- hosts: dev_server
+  become: true
+  roles:
+    - C++_shared_cache_set
+    - { role: Add_dev_user, username: 'dev1' }
+    - { role: Add_dev_user, username: 'dev2' }
+
