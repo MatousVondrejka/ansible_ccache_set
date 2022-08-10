@@ -23,3 +23,10 @@
     dest: /etc/ccache.conf
     follow: yes
     force: yes
+
+- name: Config for env
+  ansible.builtin.copy:
+    src: environment
+    dest: /etc/environment
+    follow: yes
+    force: yes

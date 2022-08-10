@@ -3,10 +3,3 @@
     name: '{{ username }}'
     shell: '/bin/bash'
     group: dev
-
-- name: Copy .bashrc
-  ansible.builtin.copy:
-    src: .bashrc
-    dest: /home/{{ username }}/.bashrc
-    follow: yes
-    force: yes

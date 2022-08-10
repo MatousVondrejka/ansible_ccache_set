@@ -15,8 +15,9 @@ C++_shared_cache_set
 
 -set up desired config file
 
+-modifie /etc/environment with CC, GCC and CCX env
+
 Add_dev_user
 
 -create user which have dev group as primary
 
--modifie .bashrc to use g++ with ccache

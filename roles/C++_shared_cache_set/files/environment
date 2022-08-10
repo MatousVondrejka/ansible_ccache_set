@@ -1,0 +1,4 @@
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+CC="/usr/lib/ccache/g++"
+CCX="/usr/lib/ccache/g++"
+GCC="/usr/lib/ccache/g++
